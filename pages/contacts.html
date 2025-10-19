@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Имя Студента</title>
     <link rel="stylesheet" href="styles/styles.css">
-    
+
 </head>
+
 <body>
     <!-- Основной контейнер -->
 
     <div class="page">
-        
+
         <!-- Шапка -->
         <header class="header">
             <img src="images/logo.png" alt="Логотип">
@@ -25,33 +27,35 @@
                     <a class="nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="projects.html">Проекты</a>
+                    <a class="nav__link" href="pages/projects.html">Проекты</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="diary.html">Дневник</a>
+                    <a class="nav__link" href="pages/diary.html">Дневник</a>
                 </li>
-                 <li class="nav__item nav__item--active">
-                    <a class="nav__link" href="contacts.html">Контакты</a>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
                 </li>
             </ul>
         </nav>
 
         <!-- Основной контент -->
         <main class="main">
-            <div><h2>Свяжитесь со мной</h2></div>
+            <div>
+                <h2>Свяжитесь со мной</h2>
+            </div>
             <!--Модальное окно -->
             <form action="/submit_form" method="post">
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Отправить сообщение</button>
-    </form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Отправить сообщение</button>
+            </form>
             <div>
                 <h2>Контакты:</h2>
                 <p>Почта: student@edu.ru</p>
@@ -67,4 +71,5 @@
         </footer>
     </div>
 </body>
+
 </html>

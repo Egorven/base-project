@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="styles/styles.css">
 
 </head>
+
 <body>
     <!-- Основной контейнер -->
     <div class="page">
-        
+
         <!-- Шапка -->
         <header class="header">
             <img src="images/logo.png" alt="Логотип">
@@ -24,13 +26,13 @@
                     <a class="nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="nav__item nav__item--active">
-                    <a class="nav__link" href="projects.html">Проекты</a>
+                    <a class="nav__link" href="pages/projects.html">Проекты</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="diary.html">Дневник</a>
+                    <a class="nav__link" href="pages/diary.html">Дневник</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="contacts.html">Контакты</a>
+                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -39,7 +41,7 @@
         <main class="main">
             <section class="projects">
                 <h2 class="projects__title">Мои проекты</h2>
-                
+
                 <!-- Фильтры -->
                 <div class="projects__filters">
                     <button class="filter-btn active" data-filter="all">Все</button>
@@ -84,23 +86,33 @@
     </div>
 
     <!-- Модальные окна -->
-    
+
     <!-- Модальное окно для проекта 1 -->
     <div id="modal-1" class="modal">
         <div class="modal__content">
             <button class="modal__close">&times;</button>
             <h3 class="modal__title">Личный сайт</h3>
             <p class="modal__description">
-                Полнофункциональный личный сайт-портфолио, созданный с использованием чистого HTML и CSS. 
-                Включает адаптивный дизайн, современную анимацию и семантическую разметку.
+                Cайт-портфолио, созданный с использованием HTML, JS и CSS.
             </p>
             <div class="modal__screenshots">
-                <img src="../images/project1-1.jpg" alt="Скриншот 1" class="modal__screenshot">
-                <img src="../images/project1-2.jpg" alt="Скриншот 2" class="modal__screenshot">
+                <img src="images/projects/project_1/1.1.png" alt="Скриншот 1" class="modal__screenshot">
+                <img src="images/projects/project_1/1.2.png" alt="Скриншот 2" class="modal__screenshot">
+                <img src="images/projects/project_1/1.3.png" alt="Скриншот 3" class="modal__screenshot">
+                <img src="images/projects/project_1/1.4.png" alt="Скриншот 4" class="modal__screenshot">
+                <img src="images/projects/project_1/modal1.4.png" alt="Скриншот 5" class="modal__screenshot">
+                <img src="images/projects/project_1/1.5.png" alt="Скриншот 6" class="modal__screenshot">
+                <img src="images/projects/project_1/dark1.1.png" alt="Скриншот 7" class="modal__screenshot">
+                <img src="images/projects/project_1/dark1.2.png" alt="Скриншот 8" class="modal__screenshot">
+                <img src="images/projects/project_1/dark1.3.png" alt="Скриншот 9" class="modal__screenshot">
+                <img src="images/projects/project_1/dark1.4.png" alt="Скриншот 10" class="modal__screenshot">
+                <img src="images/projects/project_1/dark1.5.png" alt="Скриншот 11" class="modal__screenshot">
             </div>
             <div class="modal__links">
-                <a href="https://example.com/project1" class="modal__link" target="_blank">Живая версия</a>
-                <a href="https://github.com/username/project1" class="modal__link" target="_blank">Исходный код</a>
+                <a href="https://egorven.github.io/frontend-and-backend-practice/" class="modal__link"
+                    target="_blank">Живая версия</a>
+                <a href="https://github.com/Egorven/frontend-and-backend-practice" class="modal__link"
+                    target="_blank">Исходный код</a>
             </div>
         </div>
     </div>
@@ -111,8 +123,7 @@
             <button class="modal__close">&times;</button>
             <h3 class="modal__title">Todo-приложение</h3>
             <p class="modal__description">
-                Интерактивное приложение для управления задачами с возможностью добавления, 
-                удаления, редактирования и фильтрации задач. Реализовано на чистом JavaScript.
+                Описание
             </p>
             <div class="modal__screenshots">
                 <img src="../images/project2-1.jpg" alt="Скриншот 1" class="modal__screenshot">
@@ -131,8 +142,7 @@
             <button class="modal__close">&times;</button>
             <h3 class="modal__title">Интернет-магазин</h3>
             <p class="modal__description">
-                Полноценный интернет-магазин с корзиной покупок, системой фильтрации товаров 
-                и адаптивным дизайном. Разработан на React с использованием современных хуков.
+                Описание
             </p>
             <div class="modal__screenshots">
                 <img src="../images/project3-1.jpg" alt="Скриншот 1" class="modal__screenshot">
@@ -151,37 +161,37 @@
             <button class="modal__close">&times;</button>
             <h3 class="modal__title">Портфолио Bootstrap</h3>
             <p class="modal__description">
-                Современное портфолио, созданное с использованием фреймворка Bootstrap 5. 
-                Включает сетку проектов, карусель и адаптивные компоненты.
+                Портфолио, созданное с использованием фреймворка Bootstrap.
             </p>
             <div class="modal__screenshots">
-                <img src="../images/project4-1.jpg" alt="Скриншот 1" class="modal__screenshot">
-                <img src="../images/project4-2.jpg" alt="Скриншот 2" class="modal__screenshot">
+                <img src="images/projects/project_4/4.1.png" alt="Скриншот 1" class="modal__screenshot">
+                <img src="images/projects/project_4/4.2.png" alt="Скриншот 2" class="modal__screenshot">
+                <img src="images/projects/project_4/4.3.png" alt="Скриншот 3" class="modal__screenshot">
             </div>
             <div class="modal__links">
-                <a href="https://example.com/project4" class="modal__link" target="_blank">Живая версия</a>
-                <a href="https://github.com/username/project4" class="modal__link" target="_blank">Исходный код</a>
+                <a href="https://egorven.github.io/Boostrap-project/index.html" class="modal__link"
+                    target="_blank">Живая версия</a>
+                <a href="https://github.com/Egorven/Boostrap-project" class="modal__link" target="_blank">Исходный
+                    код</a>
             </div>
         </div>
     </div>
 
     <script>
-        // Функционал фильтрации проектов
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const projectCards = document.querySelectorAll('.project-card');
-            
-            // Обработчики для кнопок фильтрации
+
             filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Убираем активный класс у всех кнопок
+                button.addEventListener('click', function () {
+
                     filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Добавляем активный класс текущей кнопке
+
                     this.classList.add('active');
-                    
+
                     const filter = this.getAttribute('data-filter');
-                    
-                    // Фильтрация проектов
+
+
                     projectCards.forEach(card => {
                         if (filter === 'all' || card.getAttribute('data-category') === filter) {
                             card.style.display = 'flex';
@@ -191,15 +201,13 @@
                     });
                 });
             });
-            
-            // Функционал модальных окон
+
             const projectCardsElements = document.querySelectorAll('.project-card');
             const modals = document.querySelectorAll('.modal');
             const closeButtons = document.querySelectorAll('.modal__close');
-            
-            // Открытие модального окна при клике на карточку
+
             projectCardsElements.forEach(card => {
-                card.addEventListener('click', function() {
+                card.addEventListener('click', function () {
                     const projectId = this.getAttribute('data-project');
                     const modal = document.getElementById(`modal-${projectId}`);
                     if (modal) {
@@ -208,28 +216,24 @@
                     }
                 });
             });
-            
+
             // Закрытие модального окна
             closeButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const modal = this.closest('.modal');
                     modal.style.display = 'none';
                     document.body.style.overflow = 'auto';
                 });
             });
-            
-            // Закрытие модального окна при клике вне контента
             modals.forEach(modal => {
-                modal.addEventListener('click', function(e) {
+                modal.addEventListener('click', function (e) {
                     if (e.target === this) {
                         this.style.display = 'none';
                         document.body.style.overflow = 'auto';
                     }
                 });
             });
-            
-            // Закрытие модального окна при нажатии Escape
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape') {
                     modals.forEach(modal => {
                         modal.style.display = 'none';
@@ -240,4 +244,5 @@
         });
     </script>
 </body>
+
 </html>

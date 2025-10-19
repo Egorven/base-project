@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Имя Студента</title>
     <link rel="stylesheet" href="styles/styles.css">
-    
+
 </head>
+
 <body>
     <!-- Основной контейнер -->
 
     <div class="page">
-        
+
         <!-- Шапка -->
         <header class="header">
-                     <img src="images/logo.png" alt="Логотип">
+            <img src="images/logo.png" alt="Логотип">
             <h1 class="header__title">Имя Студента</h1>
         </header>
 
@@ -25,13 +27,13 @@
                     <a class="nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="projects.html">Проекты</a>
+                    <a class="nav__link" href="pages/projects.html">Проекты</a>
                 </li>
                 <li class="nav__item nav__item--active">
-                    <a class="nav__link" href="diary.html">Дневник</a>
+                    <a class="nav__link" href="pages/diary.html">Дневник</a>
                 </li>
-                 <li class="nav__item">
-                    <a class="nav__link" href="contacts.html">Контакты</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -39,16 +41,16 @@
         <!-- Основной контент -->
         <main class="main">
             <h2 class="diary_title">Мой учебный процесс</h2>
-            <section class = "diary_card">
+            <section class="diary_card">
                 <p>15 дек - Верстка макета сайта ✓</p>
                 <p>10 дек - JavaScript основы ✓</p>
-                <p>05 дек - Работа с формами  in progress</p>
-                <p> 01 дек - Адаптивный дизайн  in progress</p>
+                <p>05 дек - Работа с формами in progress</p>
+                <p> 01 дек - Адаптивный дизайн in progress</p>
             </section>
             <h2 class="diary_title">Текущие курсы</h2>
-            <div>Веб-разработка ██████████ 90%</div>
-            <div>JavaScript █████████ 70%</div>
-            <div>React █████ 50%</div>
+            <div>Веб-разработка <progress value="90" max="100"></progress> 90%</div>
+            <div>JavaScript <progress value="70" max="100"></progress> 70%</div>
+            <div>React <progress value="50" max="100"> </progress> 50%</div>
             <div><button type="button">Добавить запись</button></div>
         </main>
 
@@ -58,4 +60,5 @@
         </footer>
     </div>
 </body>
+
 </html>
