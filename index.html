@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя Студента</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body>
+    <!-- Основной контейнер -->
+
+    <div class="page">
+        
+        <!-- Шапка -->
+        <header class="header">
+                     <img src="images/logo.png" alt="Логотип">
+            <h1 class="header__title">Имя Студента</h1>
+        </header>
+
+        <!-- Навигация -->
+          <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="projects.html">Проекты</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="diary.html">Дневник</a>
+                </li>
+                 <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <!-- Обо мне -->  
+            <section class="about">
+                <div class="box">
+                    <div><img class="about__photo" src="images/about_photo.jpg"></div>
+                    <div>
+                    Студент, увлекаюсь веб-разработкой. Изучаю HTML, CSS и JavaScript.
+                    Люблю создавать красивые и функциональные сайты.
+                    <p><a href="assets/resume.pdf">Скачать резюме</a></p>
+                    </div>
+                </div>
+            </section>
+            <!-- Навыки -->
+            <section class="skills">
+                <h2 class="skills__title">Мои навыки</h2>
+                <div>HTML/CSS  ██████████ 90% </div>
+                <div>JavaScript ████████ 80%</div>
+                <div>Bootstrap █████████ 85%</div>
+                <div> React ██████ 60%</div>
+            </section>
+            
+            <!-- Проекты -->
+            <section class="projects">
+                <h2 class="projects__title">Лучшие проекты</h2>
+                <div class="projects__grid">
+                    <div class="project-card">
+                        <h3 class="project-card__title">П1</h3>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-card__title">П2</h3>
+                    </div>
+                     <div class="project-card">
+                        <h3 class="project-card__title">П3</h3>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <p class="footer__text">&copy; 2025 Контакты</p>
+        </footer>
+    </div>
+</body>
+</html>

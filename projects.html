@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - Имя Студента</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+    <!-- Основной контейнер -->
+    <div class="page">
+        
+        <!-- Шапка -->
+        <header class="header">
+            <img src="images/logo.png" alt="Логотип">
+            <h1 class="header__title">Имя Студента</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="projects.html">Проекты</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="diary.html">Дневник</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="projects">
+                <h2 class="projects__title">Мои проекты</h2>
+                
+                <!-- Фильтры -->
+                <div class="projects__filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="html">HTML</button>
+                    <button class="filter-btn" data-filter="js">JavaScript</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                </div>
+
+                <!-- Сетка проектов -->
+                <div class="my_projects__grid">
+                    <!-- Проект 1 -->
+                    <div class="project-card" data-category="html" data-project="1">
+                        <h3 class="project-card__title">Личный сайт</h3>
+                        <p class="project-card__tags">HTML, CSS</p>
+                    </div>
+
+                    <!-- Проект 2 -->
+                    <div class="project-card" data-category="js" data-project="2">
+                        <h3 class="project-card__title">Todo-приложение</h3>
+                        <p class="project-card__tags">JavaScript</p>
+                    </div>
+
+                    <!-- Проект 3 -->
+                    <div class="project-card" data-category="react" data-project="3">
+                        <h3 class="project-card__title">Интернет-магазин</h3>
+                        <p class="project-card__tags">React</p>
+                    </div>
+
+                    <!-- Проект 4 -->
+                    <div class="project-card" data-category="html" data-project="4">
+                        <h3 class="project-card__title">Портфолио</h3>
+                        <p class="project-card__tags">Bootstrap</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <p class="footer__text">&copy; 2025 Контакты</p>
+        </footer>
+    </div>
+
+    <!-- Модальные окна -->
+    
+    <!-- Модальное окно для проекта 1 -->
+    <div id="modal-1" class="modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h3 class="modal__title">Личный сайт</h3>
+            <p class="modal__description">
+                Полнофункциональный личный сайт-портфолио, созданный с использованием чистого HTML и CSS. 
+                Включает адаптивный дизайн, современную анимацию и семантическую разметку.
+            </p>
+            <div class="modal__screenshots">
+                <img src="../images/project1-1.jpg" alt="Скриншот 1" class="modal__screenshot">
+                <img src="../images/project1-2.jpg" alt="Скриншот 2" class="modal__screenshot">
+            </div>
+            <div class="modal__links">
+                <a href="https://example.com/project1" class="modal__link" target="_blank">Живая версия</a>
+                <a href="https://github.com/username/project1" class="modal__link" target="_blank">Исходный код</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для проекта 2 -->
+    <div id="modal-2" class="modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h3 class="modal__title">Todo-приложение</h3>
+            <p class="modal__description">
+                Интерактивное приложение для управления задачами с возможностью добавления, 
+                удаления, редактирования и фильтрации задач. Реализовано на чистом JavaScript.
+            </p>
+            <div class="modal__screenshots">
+                <img src="../images/project2-1.jpg" alt="Скриншот 1" class="modal__screenshot">
+                <img src="../images/project2-2.jpg" alt="Скриншот 2" class="modal__screenshot">
+            </div>
+            <div class="modal__links">
+                <a href="https://example.com/project2" class="modal__link" target="_blank">Живая версия</a>
+                <a href="https://github.com/username/project2" class="modal__link" target="_blank">Исходный код</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для проекта 3 -->
+    <div id="modal-3" class="modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h3 class="modal__title">Интернет-магазин</h3>
+            <p class="modal__description">
+                Полноценный интернет-магазин с корзиной покупок, системой фильтрации товаров 
+                и адаптивным дизайном. Разработан на React с использованием современных хуков.
+            </p>
+            <div class="modal__screenshots">
+                <img src="../images/project3-1.jpg" alt="Скриншот 1" class="modal__screenshot">
+                <img src="../images/project3-2.jpg" alt="Скриншот 2" class="modal__screenshot">
+            </div>
+            <div class="modal__links">
+                <a href="https://example.com/project3" class="modal__link" target="_blank">Живая версия</a>
+                <a href="https://github.com/username/project3" class="modal__link" target="_blank">Исходный код</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для проекта 4 -->
+    <div id="modal-4" class="modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h3 class="modal__title">Портфолио Bootstrap</h3>
+            <p class="modal__description">
+                Современное портфолио, созданное с использованием фреймворка Bootstrap 5. 
+                Включает сетку проектов, карусель и адаптивные компоненты.
+            </p>
+            <div class="modal__screenshots">
+                <img src="../images/project4-1.jpg" alt="Скриншот 1" class="modal__screenshot">
+                <img src="../images/project4-2.jpg" alt="Скриншот 2" class="modal__screenshot">
+            </div>
+            <div class="modal__links">
+                <a href="https://example.com/project4" class="modal__link" target="_blank">Живая версия</a>
+                <a href="https://github.com/username/project4" class="modal__link" target="_blank">Исходный код</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Функционал фильтрации проектов
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            // Обработчики для кнопок фильтрации
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Убираем активный класс у всех кнопок
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Фильтрация проектов
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Функционал модальных окон
+            const projectCardsElements = document.querySelectorAll('.project-card');
+            const modals = document.querySelectorAll('.modal');
+            const closeButtons = document.querySelectorAll('.modal__close');
+            
+            // Открытие модального окна при клике на карточку
+            projectCardsElements.forEach(card => {
+                card.addEventListener('click', function() {
+                    const projectId = this.getAttribute('data-project');
+                    const modal = document.getElementById(`modal-${projectId}`);
+                    if (modal) {
+                        modal.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+            
+            // Закрытие модального окна
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const modal = this.closest('.modal');
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            });
+            
+            // Закрытие модального окна при клике вне контента
+            modals.forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+            
+            // Закрытие модального окна при нажатии Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    modals.forEach(modal => {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

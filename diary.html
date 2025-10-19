@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя Студента</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body>
+    <!-- Основной контейнер -->
+
+    <div class="page">
+        
+        <!-- Шапка -->
+        <header class="header">
+                     <img src="images/logo.png" alt="Логотип">
+            <h1 class="header__title">Имя Студента</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="projects.html">Проекты</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="diary.html">Дневник</a>
+                </li>
+                 <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <h2 class="diary_title">Мой учебный процесс</h2>
+            <section class = "diary_card">
+                <p>15 дек - Верстка макета сайта ✓</p>
+                <p>10 дек - JavaScript основы ✓</p>
+                <p>05 дек - Работа с формами  in progress</p>
+                <p> 01 дек - Адаптивный дизайн  in progress</p>
+            </section>
+            <h2 class="diary_title">Текущие курсы</h2>
+            <div>Веб-разработка ██████████ 90%</div>
+            <div>JavaScript █████████ 70%</div>
+            <div>React █████ 50%</div>
+            <div><button type="button">Добавить запись</button></div>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <p class="footer__text">&copy; 2025 Контакты</p>
+        </footer>
+    </div>
+</body>
+</html>
