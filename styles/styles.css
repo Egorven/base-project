@@ -384,3 +384,9 @@ html {
 .main {
     flex: 1;
 }
+.logo {
+  width: 32px; 
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
