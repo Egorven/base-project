@@ -25,6 +25,7 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-light);
+     height: 100%;
 }
 
 /* Блок page */
@@ -32,6 +33,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     background: var(--color-white);
+     display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -41,6 +44,7 @@ body {
     color: var(--color-white);
     padding: var(--space-lg);
     text-align: center;
+     flex-shrink: 0;
 }
 
 .header__title {
@@ -83,6 +87,7 @@ body {
 /* Блок main */
 .main {
     padding: var(--space-lg);
+      flex: 1;
 }
 
 .about {
@@ -321,6 +326,7 @@ body {
     text-align: center;
     padding: var(--space-md);
     margin-top: var(--space-lg);
+     flex-shrink: 0;
 }
 
 form {
@@ -366,3 +372,15 @@ button:hover {
             margin-top: 20px;
             text-align: center;
         }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+.main {
+    flex: 1;
+}

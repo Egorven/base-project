@@ -44,27 +44,19 @@
                 <h2>Свяжитесь со мной</h2>
             </div>
 
-<form id="myForm">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" name="name" required>
+            <form id="myForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
 
-    <button type="submit">Отправить сообщение</button>
-</form>
+                <button type="submit">Отправить сообщение</button>
+            </form>
 
-<script>
-    document.getElementById('myForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Сообщение отправлено!');
-        this.reset();
-    });
-</script>
-</div>
             <div>
                 <h2>Контакты:</h2>
                 <p>Почта: student@edu.ru</p>
@@ -80,5 +72,12 @@
         </footer>
     </div>
 </body>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Сообщение отправлено!');
+        this.reset();
+    });
+</script>
 
 </html>
