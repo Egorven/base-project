@@ -60,6 +60,10 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    gap:1rem;
 }
 
 .nav__item {
@@ -130,6 +134,10 @@ body {
             .about__photo {
                  height: 120px;
                 width:auto;
+            }
+            .modal__content {
+                margin: 1rem;
+                padding: 1rem;
             }
         }
 
@@ -250,16 +258,6 @@ body {
     font-size: 0.9rem;
     text-align: center;
 }
-  @media (max-width: 768px) {
-            .my_projects__grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .modal__content {
-                margin: 1rem;
-                padding: 1rem;
-            }
-        }
 
 /* Модальное окно */
 .modal {
