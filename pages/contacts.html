@@ -124,12 +124,12 @@
         if (!value) {
           field.setAttribute('aria-invalid', 'true');
           field.setAttribute('aria-describedby', `${name}-error`);
-          errorEl.textContent = 'Это поле обязательно для заполнения.';
+          errorEl.textContent = 'Это поле обязательно для заполнения';
           isValid = false;
         } else if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
           field.setAttribute('aria-invalid', 'true');
           field.setAttribute('aria-describedby', `${name}-error`);
-          errorEl.textContent = 'Введите корректный адрес электронной почты.';
+          errorEl.textContent = 'Введите корректный адрес электронной почты';
           isValid = false;
         }
       });
