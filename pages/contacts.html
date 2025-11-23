@@ -1,26 +1,25 @@
-<!DOCTYPE html>
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Контакты — Егор</title>
-  <link rel="stylesheet" href="../styles/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Имя Студента</title>
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
-
+  <!-- Основной контейнер -->
   <a href="#main" class="skip-link">Перейти к содержанию</a>
-
   <div class="page">
+
     <!-- Шапка -->
     <header class="header">
-      <img src="../images/icons/logo.png" alt="Логотип" class="logo" width="32" height="32" />
+      <img src="../images/icons/logo.png" alt="Логотип" class="logo">
       <h1 class="header__title">Егор</h1>
     </header>
 
     <!-- Навигация -->
-    <nav class="nav" role="navigation">
+    <nav class="nav" aria-label="Основная навигация">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="../">Главная</a>
@@ -44,18 +43,11 @@
       <form id="myForm" novalidate>
         <fieldset>
           <legend>Контактная форма</legend>
-
           <div class="form-group">
             <label for="name">
               Имя <span class="required-indicator" aria-hidden="true">*</span>
             </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              aria-required="true"
-            />
+            <input type="text" id="name" name="name" required aria-required="true" />
             <span class="error-message" id="name-error" role="alert"></span>
           </div>
 
@@ -63,13 +55,7 @@
             <label for="email">
               Email <span class="required-indicator" aria-hidden="true">*</span>
             </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              aria-required="true"
-            />
+            <input type="email" id="email" name="email" required aria-required="true" />
             <span class="error-message" id="email-error" role="alert"></span>
           </div>
 
@@ -77,13 +63,7 @@
             <label for="message">
               Сообщение <span class="required-indicator" aria-hidden="true">*</span>
             </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              aria-required="true"
-              rows="5"
-            ></textarea>
+            <textarea id="message" name="message" required aria-required="true" rows="5"></textarea>
             <span class="error-message" id="message-error" role="alert"></span>
           </div>
 
@@ -91,21 +71,20 @@
         </fieldset>
       </form>
 
-      <section aria-labelledby="contact-info-heading">
-        <h2 id="contact-info-heading">Контакты:</h2>
-        <p>Почта: <a href="mailto:student@edu.ru">student@edu.ru</a></p>
-        <p>
-          GitHub: <a href="https://github.com/Egorven" target="_blank" rel="noopener">Egorven</a>
-        </p>
-        <p>Адрес: Москва, Россия</p>
-      </section>
+      <div>
+        <h2>Контакты:</h2>
+        <p>Почта: student@edu.ru</p>
+        <p>Github: username</p>
+        <p>Адрес: Город, Страна</p>
+      </div>
+
     </main>
 
+    <!-- Подвал -->
     <footer class="footer">
-      <p class="footer__text">&copy; 2025 Егор</p>
+      <p class="footer__text">&copy; 2025 Контакты </p>
     </footer>
   </div>
-
   <script>
     document.getElementById('myForm').addEventListener('submit', function (e) {
       e.preventDefault();
@@ -113,7 +92,6 @@
 
       document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
       document.querySelectorAll('[aria-invalid]').forEach(el => el.removeAttribute('aria-invalid'));
-      document.querySelectorAll('[aria-describedby]').forEach(el => el.removeAttribute('aria-describedby'));
 
       const fields = ['name', 'email', 'message'];
       fields.forEach(name => {
@@ -124,28 +102,23 @@
         if (!value) {
           field.setAttribute('aria-invalid', 'true');
           field.setAttribute('aria-describedby', `${name}-error`);
-          errorEl.textContent = 'Это поле обязательно для заполнения';
+          errorEl.textContent = 'Это поле обязательно для заполнения.';
           isValid = false;
         } else if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
           field.setAttribute('aria-invalid', 'true');
           field.setAttribute('aria-describedby', `${name}-error`);
-          errorEl.textContent = 'Введите корректный адрес электронной почты';
+          errorEl.textContent = 'Введите корректный email.';
           isValid = false;
         }
       });
 
       if (isValid) {
-        const alert = document.createElement('div');
-        alert.setAttribute('role', 'alert');
-        alert.setAttribute('aria-live', 'polite');
-        alert.className = 'alert-message';
-        alert.textContent = 'Сообщение успешно отправлено!';
-        document.body.appendChild(alert);
-        setTimeout(() => {
-          if (alert.parentNode) alert.parentNode.removeChild(alert);
-        }, 3000);
-
-        this.reset();
+        const msg = document.createElement('div');
+        msg.setAttribute('role', 'alert');
+        msg.className = 'alert-message';
+        msg.textContent = 'Сообщение отправлено!';
+        document.body.appendChild(msg);
+        setTimeout(() => msg.remove(), 3000);
       }
     });
   </script>

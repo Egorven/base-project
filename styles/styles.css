@@ -512,7 +512,6 @@ a, button, input, textarea { outline-offset: 2px; }
 .nav{
  position: sticky;
  top: 0;
- /* Прибавки для вырезов/жестовых панелей — только где они есть */
  padding-block-start: calc(.75rem + env(safe-area-inset-top));
  padding-block-end: .75rem;
  padding-inline-start: calc(var(--space-md, 1rem) + env(safe-area-insetleft));
@@ -531,7 +530,6 @@ a, button, input, textarea { outline-offset: 2px; }
   margin-left: 0.2em;
 }
 
-/* Ошибки */
 .error-message {
   display: block;
   color: #d32f2f;
@@ -563,6 +561,6 @@ legend {
   padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
   z-index: 2000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
